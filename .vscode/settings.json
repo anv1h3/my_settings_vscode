@@ -67,7 +67,7 @@
   "editor.renderWhitespace": "none",
   "editor.lineHeight": 20,
   "editor.guides.indentation": false,
-  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorBlinking": "phase",
   "editor.hideCursorInOverviewRuler": true,
   "editor.parameterHints.enabled": false,
