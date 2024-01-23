@@ -1,57 +1,131 @@
 {
-  "editor.tabSize": 2,
-  "editor.wordWrap": "on",
-  "editor.folding": false,
-  "editor.hover.enabled": false,
-  "editor.smoothScrolling": true,
-  "editor.detectIndentation": true,
-  "editor.scrollBeyondLastLine": false,
-  "editor.fontSize": 13,
-  "editor.fontWeight": "normal",
-  "editor.fontLigatures": true,
-  "explorer.compactFolders": false,
-  "workbench.editor.tabSizing": "shrink",
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.colorTheme": "Andromeda Italic Bordered",
-  "customizeUI.listRowHeight": 50,
+  // Теми
+  "workbench.colorTheme": "Catppuccin Macchiato", // Тема
+  "workbench.iconTheme": "material-icon-theme", // Тема Іконок
+
+  // Провідник
+  "window.zoomLevel": 0.3, // Розмір Вікна
+  // "files.autoSave": "afterDelay", // Автозбереження Файлів Коду
+  "extensions.ignoreRecommendations": true, // Сповіщення Рекомендацій Розширень
+  "explorer.compactFolders": false, // Структура Папок у послідовному Вигляді
+  "explorer.confirmDragAndDrop": false, // Перекидання файлів без Підтвердження
+  "explorer.confirmDelete": false, // Видалення файлів без Підтвердження
+  "security.workspace.trust.untrustedFiles": "open", // Відкриття всіх Файлів
+  "window.confirmBeforeClose": "keyboardOnly", // Закривати вікно без Запиту
+  "material-icon-theme.hidesExplorerArrows": true, // Стрілки Папок
+  "workbench.tree.renderIndentGuides": "none", // Смужки біля Папок
+  "window.openFilesInNewWindow": "off", // Відкривати файли в новому Вікні
+  "window.density.editorTabHeight": "compact", // Компактні вкладки Файлів
+  "workbench.editor.tabSizing": "fixed", // Зменшення вкладок Файлів
+  "workbench.sideBar.location": "right", // SideBar Право
+  "workbench.layoutControl.enabled": false, // Панель Вкладок
+  "workbench.startupEditor": "none", // Екран Welcome
+  "workbench.tips.enabled": false, // Підказки на Екрані Welcome
+  "workbench.activityBar.location": "top", // Панель Дій
+  // "window.menuBarVisibility": "toggle", // Верхнє Меню
+  // "workbench.activityBar.visible": , // Панель Активності
+  // "workbench.statusBar.visible": false, // Нижня стрічка Статус Бар
+  // "workbench.editor.showTabs": false, // Вкладки Коду
+  // "git.decorations.enabled": false, // Видалення значків змінення в Git
+  // "files.exclude": {"**/.Name": true} //, Приховування Папок які Непотрібні
+
+  // Кольори Рядка в (Папки, Файли)
   "workbench.colorCustomizations": {
-    "terminal.background": "#0B1C2C",
-    "terminal.foreground": "#CBD6E2",
-    "terminalCursor.background": "#CBD6E2",
-    "terminalCursor.foreground": "#CBD6E2",
-    "terminal.ansiBlack": "#104576",
-    "terminal.ansiBlue": "#645473",
-    "terminal.ansiBrightBlack": "#627E99",
-    "terminal.ansiBrightBlue": "#8B56BF",
-    "terminal.ansiBrightCyan": "#3c5975",
-    "terminal.ansiBrightGreen": "#56BF8B",
-    "terminal.ansiBrightMagenta": "#BF568B",
-    "terminal.ansiBrightRed": "#BF8B56",
-    "terminal.ansiBrightWhite": "#F7F9FB",
-    "terminal.ansiBrightYellow": "#8BBF56",
-    "terminal.ansiCyan": "#568BBF",
-    "terminal.ansiGreen": "#56BF8B",
-    "terminal.ansiMagenta": "#BF568B",
-    "terminal.ansiRed": "#000000",
-    "terminal.ansiWhite": "#000000",
-    "terminal.ansiYellow": "#390f2f"
+    "editorSuggestWidget.selectedBackground": "#583894", // Вікно автозаповнення
+    "list.activeSelectionBackground": "#583894", // Кольори Пункту в Side Bar
+    "list.inactiveSelectionBackground": "#583894",
+    "list.focusBackground": "#583894",
+    "list.hoverBackground": "#583894"
+    // "sideBar.background": "#191521", // Колір Side Bar
   },
-  "terminalThemes.style": "Harmonic Dark (base16)",
-  "editor.fontFamily": "JetBrains Mono",
-  "workbench.sideBar.location": "right",
-  "customizeUI.activityBar": "regular",
-  "terminal.integrated.cursorStyle": "underline",
-  "terminal.integrated.fontSize": 12,
-  "terminal.integrated.fontFamily": "JetBrains Mono",
-  "html.completion.attributeDefaultValue": "singlequotes",
-  "prettier.semi": false,
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
-  "prettier.arrowParens": "avoid",
-  "prettier.jsxSingleQuote": true,
+
+  // Налаштування вікна Коду
+  "editor.folding": false, // Звертання Коду
+  "editor.showFoldingControls": "never", // Елемент звертання Коду
+  "editor.lightbulb.enabled": false, // Лампочка Коду
+  "editor.hover.enabled": true, // Підказки при наведенні на Код
+  "editor.suggestSelection": "first", // Підказка вибору Коду
+  "editor.quickSuggestionsDelay": 0, // Швидкість підказки в Коді
+  "editor.linkedEditing": true, // Автоматичний змінювач Тегів
+  "editor.glyphMargin": false, // Відступ від чисел спереду Коду
+  "editor.formatOnSave": true, // Форматувати Код при збереженні Файлу
+  "editor.wordWrap": "bounded", // Перенесення рядку Коду по Розміру
+  "editor.wrappingIndent": "same", // Переносити по Словам
+  "editor.wordWrapColumn": 80, // Розмір рядку в Символах
+  "editor.scrollbar.vertical": "visible", // Вертикальний Скрол Бар
+  "editor.hideCursorInOverviewRuler": false, // Індикатор Вертикаль.. Скрол Бару
+  "editor.overviewRulerBorder": false, // Рамка Індикатора Вертикаль. Скрол Бару
+  "editor.scrollbar.verticalScrollbarSize": 3, // Товщина Вертикальної Прокрутки
+  "editor.scrollbar.horizontal": "hidden", // Горизонтальний Скрол Бар
+  "editor.scrollbar.horizontalScrollbarSize": 0, // Товщина Горизонт.. Прокрутки
+  // "scm.diffDecorations": "none", // Не відображає індикаторів Відмінностей
+
+  // Шрифт
+  "editor.fontFamily": "JetBrains Mono", // Шрифт Коду
+  "editor.fontSize": 15, // Розмір Шрифту
+  "editor.tabSize": 2, // Табуляція Пробілу
+  "editor.padding.top": 0, // відступ зверху Кода
+  "files.insertFinalNewline": true, // Останній Рядок Коду
+  "editor.fontLigatures": true, // Жирний шрифт Збереження Коду //+++ ===
+  "editor.detectIndentation": false, // Відключення табуляції по Замовчуванню
+  "editor.fontWeight": "normal", // Нормальний розмір Шрифту
+  // "editor.lineHeight": 24, // Висота Шрифту у Рядку Коду
+  // "editor.guides.indentation": false, // Смужки в редакторі Коду
+  // "editor.renderWhitespace": "none", // Пробіли в редакторі Коду
+  // "editor.renderLineHighlight": "none", // Підсвітка Рядка Коду
+  // "editor.matchBrackets": "never", // Підсвічування парних Скобок
+  // "editor.insertSpaces": false, // Користуватися не Space а Tab
+
+  // Термінал
+  "terminal.integrated.defaultProfile.windows": "Git Bash", // Термінал
+  "terminal.integrated.fontSize": 13, // Розмір Шрифту у Терміналі
+  "terminal.integrated.fontFamily": "Fira Code", // Шрифт Термінала
+  "terminal.integrated.cursorStyle": "line", // Стиль Курсора
+
+  // Cursor
+  "editor.cursorSmoothCaretAnimation": "on", // Плавна Анімація
+  "editor.multiCursorModifier": "ctrlCmd", // Мульті Курсор |||
+  "editor.cursorBlinking": "expand", // Стиль Анімації Курсора
+  "editor.cursorStyle": "line", // Стиль Курсора
+  "editor.cursorWidth": 2, // Товщина Курсора
+
+  // Scroll Миші
+  "editor.smoothScrolling": true, // Плавний Скрол Мишки
+  "workbench.list.smoothScrolling": true, // Плавний Скрол Мишки у Деревах
+  "terminal.integrated.smoothScrolling": true, // Плавний Скрол Мишки Термінала
+
+  //MiniMap
+  "editor.minimap.enabled": false,
+  "editor.minimap.renderCharacters": false,
+
+  // Вікно Обмеження Відкритих Файлів
+  "security.workspace.trust.emptyWindow": false,
+  "security.workspace.trust.banner": "never",
+  "security.workspace.trust.enabled": false,
+
+  // Code Spell Checker
+  "cSpell.language": "en,uk", // Мова
+  "cSpell.userWords": ["папок", "Папка", "папки", "Скрол", "Коміт"], // Винятки
+  "cSpell.enabled": true, // Включений
+  "git.enableSmartCommit": true, // Коміт для Змін
+
+  // Prettier - https://prettier.io/docs/en/options.html
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.printWidth": 80,
+  "prettier.tabWidth": 2,
+  "prettier.useTabs": false,
+  "prettier.semi": true,
   "prettier.singleQuote": true,
-  "prettier.useTabs": true,
+  "prettier.jsxSingleQuote": false,
+  "prettier.trailingComma": "all",
+  "prettier.bracketSpacing": true,
+  "prettier.bracketSameLine": false,
+  "prettier.arrowParens": "avoid",
+
   "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
@@ -63,31 +137,35 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.minimap.enabled": true,
-  "editor.renderWhitespace": "none",
-  "editor.lineHeight": 20,
-  "editor.guides.indentation": false,
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.cursorBlinking": "phase",
-  "editor.hideCursorInOverviewRuler": true,
-  "editor.parameterHints.enabled": false,
-  "editor.selectionHighlight": false,
-  "editor.lightbulb.enabled": false,
-  "editor.glyphMargin": false,
-  "editor.cursorSurroundingLines": 5,
-  "editor.renderLineHighlight": "all",
-  "workbench.tips.enabled": false,
-  "workbench.editor.tabCloseButton": "left",
-  "workbench.tree.renderIndentGuides": "none",
-  "explorer.confirmDragAndDrop": false,
-  "explorer.confirmDelete": false,
-  "files.trimFinalNewlines": true,
-  "files.insertFinalNewline": true,
-  "git.confirmSync": false,
-  "liveServer.settings.donotShowInfoMsg": true,
-  "git.enableSmartCommit": true,
-  "terminal.integrated.automationProfile.windows": {},
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "problems.decorations.enabled": false,
-  "scm.diffDecorations": "overview"
+
+  // Розміщення файлів (папок) по силці коду
+  "breadcrumbs.enabled": false // Рядок Розміщення файлів
+  // "breadcrumbs.icons": false,
+  // "breadcrumbs.showKeys": false,
+  // "breadcrumbs.showFiles": false,
+  // "breadcrumbs.symbolPath": "off",
+  // "breadcrumbs.showArrays": false,
+  // "breadcrumbs.showBooleans": false,
+  // "breadcrumbs.showClasses": false,
+  // "breadcrumbs.showConstants": false,
+  // "breadcrumbs.showConstructors": false,
+  // "breadcrumbs.showEnumMembers": false,
+  // "breadcrumbs.showEvents": false,
+  // "breadcrumbs.showFields": false,
+  // "breadcrumbs.showEnums": false,
+  // "breadcrumbs.showFunctions": false,
+  // "breadcrumbs.showInterfaces": false,
+  // "breadcrumbs.showMethods": false,
+  // "breadcrumbs.showModules": false,
+  // "breadcrumbs.showNamespaces": false,
+  // "breadcrumbs.showNull": false,
+  // "breadcrumbs.showNumbers": false,
+  // "breadcrumbs.showObjects": false,
+  // "breadcrumbs.showOperators": false,
+  // "breadcrumbs.showPackages": false,
+  // "breadcrumbs.showProperties": false,
+  // "breadcrumbs.showStrings": false,
+  // "breadcrumbs.showStructs": false,
+  // "breadcrumbs.showTypeParameters": false,
+  // "breadcrumbs.showVariables": false,
 }
